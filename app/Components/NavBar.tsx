@@ -1,14 +1,49 @@
 "use client";
 
 import styled from "styled-components";
+import LinkWrapper from "./LinkWrapper";
 
 const Wrapper = styled.div`
-  display: flex;
+  background-color: hsl(105, 100%, 35%);
+  padding: 1vmin 1 vmin;
 `;
-export default function NavBar({}) {
+
+const Links = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(1vw + 2lh);
+  justify-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2vmin;
+  padding-bottom: 0.2lh;
+  font-size: calc(0.7rem + 1vw);
+`;
+
+interface INavBarItem {
+  href: string;
+  linkName: string;
+}
+
+interface INavBar {
+  navbarItems?: INavBarItem[];
+  logo?: React.ReactNode | string;
+}
+
+export default function NavBar({
+  navbarItems = [],
+  logo = "Your Logo Here"
+}: INavBar) {
   return (
     <Wrapper>
-      <h3>Nav Bar</h3>
+      <Links>
+        <LinkWrapper href="/">{logo}</LinkWrapper>
+        {navbarItems.map((item) => (
+          <LinkWrapper href={`/${item.href}`} key={item.href}>
+            {item.linkName}
+          </LinkWrapper>
+        ))}
+      </Links>
     </Wrapper>
   );
 }
