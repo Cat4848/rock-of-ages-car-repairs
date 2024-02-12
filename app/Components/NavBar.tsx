@@ -2,6 +2,7 @@
 
 import styled from "styled-components";
 import LinkWrapper from "./LinkWrapper";
+import color from "@/lib/color";
 
 const Wrapper = styled.div`
   background: black;
