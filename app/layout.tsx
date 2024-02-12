@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navbar/NavBar";
+import BottomTrim from "./components/navbar/NavBarBottomTrim";
+import color from "@/lib/color";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav><NavBar/></nav>
+        <nav>
+          <NavBar>
+            <BottomTrim color={color.gold} />
+          </NavBar>
+        </nav>
         <main>{children}</main>
       </body>
     </html>
