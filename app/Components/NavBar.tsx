@@ -5,8 +5,8 @@ import LinkWrapper from "./LinkWrapper";
 import color from "@/lib/color";
 
 const Wrapper = styled.div`
-  background: black;
-  color: gold;
+  background: ${color.black};
+  color: ${color.gold};
   padding: 1vmin 1 vmin;
   height: 10em;
 `;
