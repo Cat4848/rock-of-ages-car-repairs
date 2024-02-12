@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -6,7 +8,7 @@ const Wrapper = styled.div`
 export default function NavBar({}) {
   return (
     <Wrapper>
-      <h3>Nav Bar</h3>;
+      <h3>Nav Bar</h3>
     </Wrapper>
   );
 }
