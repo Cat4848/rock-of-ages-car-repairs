@@ -4,8 +4,10 @@ import styled from "styled-components";
 import LinkWrapper from "./LinkWrapper";
 
 const Wrapper = styled.div`
-  background-color: hsl(105, 100%, 35%);
+  background: black;
+  color: gold;
   padding: 1vmin 1 vmin;
+  height: 10em;
 `;
 
 const Links = styled.ul`
