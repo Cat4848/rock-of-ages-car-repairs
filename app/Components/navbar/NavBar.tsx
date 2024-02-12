@@ -1,10 +1,13 @@
 "use client";
 
 import styled from "styled-components";
-import LinkWrapper from "./LinkWrapper";
+import LinkWrapper from "../LinkWrapper";
 import color from "@/lib/color";
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   background: ${color.black};
   color: ${color.gold};
   padding: 1vmin 1 vmin;
@@ -23,6 +26,8 @@ const Links = styled.ul`
   font-size: calc(0.7rem + 1vw);
 `;
 
+const BottomTrim = styled.div``;
+
 interface INavBarItem {
   href: string;
   linkName: string;
@@ -31,11 +36,13 @@ interface INavBarItem {
 interface INavBar {
   navbarItems?: INavBarItem[];
   logo?: React.ReactNode | string;
+  children: React.ReactNode;
 }
 
 export default function NavBar({
   navbarItems = [],
-  logo = "Your Logo Here"
+  logo = "Your Logo Here",
+  children = <div></div>
 }: INavBar) {
   return (
     <Wrapper>
@@ -47,6 +54,7 @@ export default function NavBar({
           </LinkWrapper>
         ))}
       </Links>
+      <BottomTrim>{children}</BottomTrim>
     </Wrapper>
   );
 }
