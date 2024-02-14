@@ -20,9 +20,9 @@ const StyledSpan = styled.span`
   font-size: calc(2em + 1vw);
   letter-spacing: -1px;
   line-height: 1.56em;
-  background: rgb(214, 219, 220, 0.25);
+  background: ${color.silverTransparent};
   padding: 1.5%;
-  `;
+`;
 
 interface IMainImage {
   src: any;
