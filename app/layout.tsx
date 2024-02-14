@@ -26,6 +26,11 @@ export default function RootLayout({
           </NavBar>
         </nav>
         <main>{children}</main>
+        <footer>
+          <small>
+            {`Copyright © ${new Date().getFullYear()} Rock of Ages Software. All Rights Reserved.`}
+          </small>
+        </footer>
       </body>
     </html>
   );
