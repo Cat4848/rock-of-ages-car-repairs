@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const Heading = styled.h2`
   position: absolute;
-  top: 6em;
+  top: 6vw;
   width: 100%;
 `;
 
