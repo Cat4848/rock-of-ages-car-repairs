@@ -43,5 +43,11 @@ export const briefServices: IService[] = [
     price: "£190",
     replace: [...fullReplacements],
     check: [...fullChecks]
+  },
+  {
+    title: "Brakes",
+    price: "£300",
+    replace: ["Brake Pads, Brake Discs"],
+    check: ["Brake Hoses"]
   }
 ];
