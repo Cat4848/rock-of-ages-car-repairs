@@ -19,7 +19,7 @@ const StyledSpan = styled.span`
   color: ${color.silver};
   font-size: calc(2em + 1vw);
   letter-spacing: -1px;
-  line-height: 1.56em;
+  line-height: 1.57em;
   background: ${color.silverTransparent};
   padding: 1.5%;
 `;
