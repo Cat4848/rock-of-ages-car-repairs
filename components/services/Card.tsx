@@ -6,12 +6,16 @@ import List from "./List";
 const Wrapper = styled.div`
   background: ${color.black};
   color: ${color.silver};
-  opacity: 0.7;
-  border: 2px solid red;
+  opacity: 0.75;
+  font-size: calc(1em + 1vw);
+  padding: 1em;
+  height: 100%;
+  width: 20em;;
 `;
 
 const Banner = styled.div<{ $color: string }>`
   background: ${({ $color }) => $color};
+  height: 0.5em;
 `;
 const Title = styled.h4``;
 const Price = styled.p``;

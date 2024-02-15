@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.ul``;
-const Item = styled.li``;
+const Item = styled.li`
+  list-style: none;
+`;
 
 export default function List({ list = [] }: { list: string[] }) {
   return (
