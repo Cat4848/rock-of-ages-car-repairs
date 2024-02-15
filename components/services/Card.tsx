@@ -5,7 +5,9 @@ import List from "./List";
 
 const Wrapper = styled.div`
   background: ${color.black};
+  color: ${color.silver};
   opacity: 0.7;
+  border: 2px solid red;
 `;
 
 const Banner = styled.div<{ $color: string }>`
@@ -26,9 +28,10 @@ export default function Card({
   return (
     <Wrapper>
       <Banner $color={bannerColor} />
-      <Title>{content.price}</Title>
+      <Title>{content.title}</Title>
       <Price>{content.price}</Price>
       <List list={content.replace} />
+      <List list={content.check} />
     </Wrapper>
   );
 }
