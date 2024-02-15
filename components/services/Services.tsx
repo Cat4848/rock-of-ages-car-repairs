@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import Card from "./Card";
 
 const Wrapper = styled.div``;
 
-export default function Services({}){
+export default function Services({}) {
   return (
-    <Wrapper></Wrapper>
-  )
+    <Wrapper>
+      <Card />
+    </Wrapper>
+  );
 }
