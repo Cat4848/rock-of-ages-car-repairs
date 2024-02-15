@@ -16,7 +16,7 @@ const Heading = styled.h2`
 `;
 
 const StyledSpan = styled.span`
-  color: white;
+  color: ${color.silver};
   font-size: calc(2em + 1vw);
   letter-spacing: -1px;
   line-height: 1.56em;
