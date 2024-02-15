@@ -18,7 +18,14 @@ const fullChecks = [
   "Rust"
 ];
 
-export const briefServices = [
+export interface IService {
+  title: string;
+  price: string;
+  replace: string[];
+  check: string[];
+}
+
+export const briefServices: IService[] = [
   {
     title: "Oil and Filter Change",
     price: "£135",
