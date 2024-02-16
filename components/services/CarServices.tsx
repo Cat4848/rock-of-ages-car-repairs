@@ -11,7 +11,7 @@ const ServicesWrapper = styled.div`
 `;
 const Header = styled.h2``;
 
-export default function Services() {
+export default function CarServices() {
   return (
     <Wrapper>
       <Header>Services Available</Header>
