@@ -7,7 +7,6 @@ import color from "@/lib/color";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
 `;
 const ValueAndIcon = styled.div<{ $opacity: string }>`
   display: flex;
