@@ -25,15 +25,15 @@ const ValueAndIcon = styled.div<{ $opacity: string }>`
   background: ${color.silver};
   opacity: 0.75;
   color: ${color.black};
-  font-size: calc(1em + 1vw);
-  height: 10em;
-  width: 10em;
+  font-size: calc(0.6em + 1vw);
+  font-weight: bold;
+  height: 20vw;
+  width: 20vw;
 `;
 const Value = styled.p``;
 const Icon = styled.div<{ $scale: number }>`
   scale: ${({ $scale }) => $scale};
 `;
-
 
 const scale = 1.5;
 
