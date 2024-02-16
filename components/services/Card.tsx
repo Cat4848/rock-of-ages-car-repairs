@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   font-size: calc(1em + 1vw);
   padding: 1em;
   height: 100%;
-  width: 20em;
+  width: 80vw;
 `;
 
 const Banner = styled.div<{ $color: string }>`
