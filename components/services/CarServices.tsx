@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Card from "./Card";
 import color from "@/lib/color";
-import { briefServices } from "@/lib/carServicesData";
+import { carServices } from "@/lib/carServicesData";
 
 const Wrapper = styled.div``;
 const ServicesWrapper = styled.div`
@@ -16,7 +16,7 @@ export default function CarServices() {
     <Wrapper>
       <Header>Services Available</Header>
       <ServicesWrapper>
-        {briefServices.map((item, i) => (
+        {carServices.map((item, i) => (
           <Card key={i} bannerColor={color.gold} content={item} />
         ))}
       </ServicesWrapper>
