@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 10em;
 `;
 const Container = styled.div`
   position: absolute;
