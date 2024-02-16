@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Card from "./Card";
 import color from "@/lib/color";
-import { briefServices } from "@/lib/servicesData";
+import { briefServices } from "@/lib/carServicesData";
 
 const Wrapper = styled.div``;
 const ServicesWrapper = styled.div`
