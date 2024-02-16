@@ -6,16 +6,16 @@ export const values = [
   {
     name: "Honest Mechanic",
     icon: <BiSolidCarMechanic />,
-    opacity: "0.4"
+    opacity: "0.6"
   },
   {
     name: "Quality Service",
     icon: <FaStar />,
-    opacity: "0.5"
+    opacity: "0.7"
   },
   {
     name: "Affordable Prices",
     icon: <FaHandshakeSimple />,
-    opacity: "0.6"
+    opacity: "0.8"
   }
 ];
