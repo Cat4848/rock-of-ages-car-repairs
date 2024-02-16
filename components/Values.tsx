@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import { BiSolidCarMechanic } from "react-icons/bi";
-import { FaStar } from "react-icons/fa";
-import { FaHandshakeSimple } from "react-icons/fa6";
-
 import color from "@/lib/color";
+import { values } from "@/lib/valuesData";
 
 const Wrapper = styled.div`
   display: flex;
@@ -26,23 +23,6 @@ const Icon = styled.div<{ $scale: number }>`
   scale: ${({ $scale }) => $scale};
 `;
 
-const values = [
-  {
-    name: "Honest Mechanic",
-    icon: <BiSolidCarMechanic />,
-    opacity: "0.4"
-  },
-  {
-    name: "Quality Service",
-    icon: <FaStar />,
-    opacity: "0.5"
-  },
-  {
-    name: "Affordable Prices",
-    icon: <FaHandshakeSimple />,
-    opacity: "0.6"
-  }
-];
 const scale = 1.5;
 
 export default function Values() {
