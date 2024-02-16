@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import color from "@/lib/color";
-import { IService } from "@/lib/servicesData";
+import { ICarService } from "@/lib/definitions";
 import List from "./List";
 
 const Wrapper = styled.div`
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   font-size: calc(1em + 1vw);
   padding: 1em;
   height: 100%;
-  width: 20em;;
+  width: 20em;
 `;
 
 const Banner = styled.div<{ $color: string }>`
@@ -28,7 +28,7 @@ interface ICard<Content> {
 export default function Card({
   bannerColor = "white",
   content = { title: "", price: "", replace: [], check: [] }
-}: ICard<IService>) {
+}: ICard<ICarService>) {
   return (
     <Wrapper>
       <Banner $color={bannerColor} />

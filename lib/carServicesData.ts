@@ -1,3 +1,5 @@
+import { ICarService } from "./definitions";
+
 const oilChangeReplacements = ["Oil Change", "Oil Filter Replacement"];
 const oilChangeChecks = ["Service Book Stamp", "Service Light Reset"];
 const interimReplacements = [...oilChangeReplacements];
@@ -18,14 +20,7 @@ const fullChecks = [
   "Rust"
 ];
 
-export interface IService {
-  title: string;
-  price: string;
-  replace: string[];
-  check: string[];
-}
-
-export const briefServices: IService[] = [
+export const carServices: ICarService[] = [
   {
     title: "Oil and Filter Change",
     price: "£135",
@@ -43,11 +38,5 @@ export const briefServices: IService[] = [
     price: "£190",
     replace: [...fullReplacements],
     check: [...fullChecks]
-  },
-  {
-    title: "Brakes",
-    price: "£300",
-    replace: ["Brake Pads, Brake Discs"],
-    check: ["Brake Hoses"]
   }
 ];
