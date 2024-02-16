@@ -3,7 +3,7 @@
 import styled from "styled-components";
 import yellowCar from "../assets/yellow-toy-car-in-dramatic-desert-landscape.svg";
 import MainImage from "@/components/MainImage";
-import Services from "@/components/services/CarServices";
+import CarServices from "@/components/services/CarServices";
 import Values from "@/components/Values";
 
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Wrapper>
       <MainImage src={yellowCar} alt={mainImageAlt} text={mainImageText} />
-      <Services />
+      <CarServices />
       <Values />
     </Wrapper>
   );
