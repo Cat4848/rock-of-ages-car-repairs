@@ -4,6 +4,7 @@ import styled from "styled-components";
 import yellowCar from "../assets/yellow-toy-car-in-dramatic-desert-landscape.svg";
 import MainImage from "@/components/MainImage";
 import Services from "@/components/services/Services";
+import Values from "@/components/Values";
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ export default function Home() {
     <Wrapper>
       <MainImage src={yellowCar} alt={mainImageAlt} text={mainImageText} />
       <Services />
+      <Values />
     </Wrapper>
   );
 }
