@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "@/components/Footer";
-import BottomTrim from "../components/navbar/NavBarBottomTrim";
+import Trim from "@/components/Trim";
 import color from "@/lib/color";
 import { footerText, footerHeight, footerLogo } from "@/lib/footer";
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav>
           <NavBar>
-            <BottomTrim color={color.gold} />
+            <Trim color={color.gold} />
           </NavBar>
         </nav>
         <main>{children}</main>

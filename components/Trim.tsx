@@ -11,6 +11,6 @@ interface IBottomTrim {
   color: string;
 }
 
-export default function BottomTrim({ color = "white" }: IBottomTrim) {
+export default function Trim({ color = "white" }: IBottomTrim) {
   return <Wrapper $color={color}></Wrapper>;
 }
