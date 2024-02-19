@@ -3,6 +3,7 @@
 import styled from "styled-components";
 import LinkWrapper from "../LinkWrapper";
 import color from "@/lib/color";
+import ContactDetails from "../ContactDetails";
 
 const Wrapper = styled.div`
   display: flex;
@@ -48,6 +49,11 @@ export default function NavBar({
     <Wrapper>
       <Links>
         <LinkWrapper href="/">{logo}</LinkWrapper>
+        <ContactDetails
+          type="Mobile Mechanic"
+          tel="+447845465922"
+          email="catalinrol@gmail.com"
+        />
         {navbarItems.map((item) => (
           <LinkWrapper href={`/${item.href}`} key={item.href}>
             {item.linkName}

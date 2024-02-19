@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface IContactDetails {
-  business: string;
+  type: string;
   tel: string;
   email: string;
 }
@@ -11,25 +11,25 @@ const Telephone = styled.div``;
 const Email = styled.div``;
 
 export default function ContactDetails({
-  business = "",
+  type = "",
   tel = "",
   email = ""
 }: IContactDetails) {
   return (
     <Wrapper itemScope itemType="https://schema.org/LocalBusiness">
-      <h1 itemProp="name">{business}</h1>
+      <h1 itemProp="name">{type}</h1>
 
       <Telephone>
-        Touch Call:
+        Call {""}
         <span itemProp="telephone">
-          <a href={tel}>{tel}</a>
+          <a href={`tel:${tel}`}>{tel}</a>
         </span>
       </Telephone>
 
       <Email>
-        Touch E-mail:
+        e-mail {""}
         <span itemProp="email">
-          <a href={email}>{email}</a>
+          <a href={`mailto:${email}`}>{email}</a>
         </span>
       </Email>
     </Wrapper>
