@@ -8,6 +8,7 @@ import Brakes from "@/components/Brakes";
 import Values from "@/components/Values";
 import Footer from "@/components/Footer";
 import color from "@/lib/color";
+import { footerText } from "@/lib/footer";
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,7 +25,7 @@ export default function Home() {
       <CarServices />
       <Brakes />
       <Values />
-      <Footer backgroundColor={color.black}/>
+      <Footer backgroundColor={color.black} text={footerText}/>
     </Wrapper>
   );
 }
