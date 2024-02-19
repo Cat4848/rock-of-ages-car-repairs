@@ -27,7 +27,12 @@ export default function Home() {
       <CarServices />
       <Brakes />
       <Values />
-      <Footer backgroundColor={color.black} text={footerText} logo={footerLogo} />
+      <Footer
+        backgroundColor={color.black}
+        textColor={color.silver}
+        text={footerText}
+        logo={footerLogo}
+      />
     </Wrapper>
   );
 }
