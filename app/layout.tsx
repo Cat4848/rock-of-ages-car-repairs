@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import NavBar from "../components/navbar/NavBar";
-import BottomTrim from "../components/navbar/NavBarBottomTrim";
+import Footer from "@/components/Footer";
+import Trim from "@/components/Trim";
 import color from "@/lib/color";
+import { footerText, footerHeight, footerLogo } from "@/lib/footer";
+import { navbarBottomTrimHeight } from "@/lib/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,15 +25,17 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav>
           <NavBar>
-            <BottomTrim color={color.gold} />
+            <Trim color={color.gold} height={navbarBottomTrimHeight} />
           </NavBar>
         </nav>
         <main>{children}</main>
-        <footer>
-          <small>
-            {`Copyright © ${new Date().getFullYear()} Rock of Ages Software. All Rights Reserved.`}
-          </small>
-        </footer>
+        <Footer
+          height={footerHeight}
+          backgroundColor={color.black}
+          textColor={color.silver}
+          text={footerText}
+          logo={footerLogo}
+        />
       </body>
     </html>
   );
