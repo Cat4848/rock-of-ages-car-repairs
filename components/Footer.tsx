@@ -29,7 +29,11 @@ export default function Footer({
   logo = ""
 }: IFooter) {
   return (
-    <Wrapper $height={height} $backgroundColor={backgroundColor} $textColor={textColor}>
+    <Wrapper
+      $height={height}
+      $backgroundColor={backgroundColor}
+      $textColor={textColor}
+    >
       <div>{logo}</div>
       <small>{text}</small>
     </Wrapper>
