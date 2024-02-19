@@ -16,6 +16,8 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const footerLogo = "Footer Logo";
+
 export default function Home() {
   const mainImageAlt = "yellow-toy-car-in-dramatic-desert";
   const mainImageText = "Mobile Mechanic in Kent.";
@@ -25,7 +27,7 @@ export default function Home() {
       <CarServices />
       <Brakes />
       <Values />
-      <Footer backgroundColor={color.black} text={footerText}/>
+      <Footer backgroundColor={color.black} text={footerText} logo={footerLogo} />
     </Wrapper>
   );
 }

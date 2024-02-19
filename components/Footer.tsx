@@ -19,6 +19,7 @@ export default function Footer({
 }: IFooter) {
   return (
     <Wrapper $backgroundColor={backgroundColor}>
+      <div>{logo}</div>
       <small>{text}</small>
     </Wrapper>
   );
