@@ -4,7 +4,11 @@ import styled from "styled-components";
 
 const Wrapper = styled.div``;
 
-export default function Footer() {
+interface IFooter {
+  backgroundColor: string;
+}
+
+export default function Footer({ backgroundColor = "black" }: IFooter) {
   return (
     <Wrapper>
       <small>
