@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 interface IContactDetails {
   type: string;
-  tel: string;
+  countryCode: string;
+  mobile: string;
   email: string;
 }
 
@@ -12,7 +13,8 @@ const Email = styled.div``;
 
 export default function ContactDetails({
   type = "",
-  tel = "",
+  countryCode = "",
+  mobile = "",
   email = ""
 }: IContactDetails) {
   return (
@@ -22,7 +24,7 @@ export default function ContactDetails({
       <Telephone>
         Call {""}
         <span itemProp="telephone">
-          <a href={`tel:${tel}`}>{tel}</a>
+          <a href={`tel:${countryCode}${mobile}`}>{`0${mobile}`}</a>
         </span>
       </Telephone>
 
