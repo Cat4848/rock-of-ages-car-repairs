@@ -7,6 +7,8 @@ interface IContactDetails {
 }
 
 const Wrapper = styled.div``;
+const Telephone = styled.div``;
+const Email = styled.div``;
 
 export default function ContactDetails({
   business = "",
@@ -16,10 +18,20 @@ export default function ContactDetails({
   return (
     <Wrapper itemScope itemType="https://schema.org/LocalBusiness">
       <h1 itemProp="name">{business}</h1>
-      Touch Call:
-      <span itemProp="telephone">
-        <a href={tel}>{tel}</a>
-      </span>
+
+      <Telephone>
+        Touch Call:
+        <span itemProp="telephone">
+          <a href={tel}>{tel}</a>
+        </span>
+      </Telephone>
+
+      <Email>
+        Touch E-mail:
+        <span itemProp="email">
+          <a href={email}>{email}</a>
+        </span>
+      </Email>
     </Wrapper>
   );
 }
