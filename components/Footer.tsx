@@ -2,7 +2,9 @@
 
 import styled from "styled-components";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div<{ $backgroundColor: string }>`
+  background: ${({ $backgroundColor }) => $backgroundColor};
+`;
 
 interface IFooter {
   backgroundColor: string;
@@ -16,7 +18,7 @@ export default function Footer({
   logo = ""
 }: IFooter) {
   return (
-    <Wrapper>
+    <Wrapper $backgroundColor={backgroundColor}>
       <small>{text}</small>
     </Wrapper>
   );

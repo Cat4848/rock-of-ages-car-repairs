@@ -6,6 +6,8 @@ import MainImage from "@/components/MainImage";
 import CarServices from "@/components/services/CarServices";
 import Brakes from "@/components/Brakes";
 import Values from "@/components/Values";
+import Footer from "@/components/Footer";
+import color from "@/lib/color";
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,6 +24,7 @@ export default function Home() {
       <CarServices />
       <Brakes />
       <Values />
+      <Footer backgroundColor={color.black}/>
     </Wrapper>
   );
 }
