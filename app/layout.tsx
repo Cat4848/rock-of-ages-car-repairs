@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 };
 
 const footerLogo = "Footer Logo";
+const footerHeight = "10em";
 
 export default function RootLayout({
   children
@@ -31,6 +32,7 @@ export default function RootLayout({
         </nav>
         <main>{children}</main>
         <Footer
+          height={footerHeight}
           backgroundColor={color.black}
           textColor={color.silver}
           text={footerText}
