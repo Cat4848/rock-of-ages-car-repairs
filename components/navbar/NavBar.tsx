@@ -4,6 +4,7 @@ import styled from "styled-components";
 import LinkWrapper from "../LinkWrapper";
 import color from "@/lib/color";
 import ContactDetails from "../ContactDetails";
+import { business } from "@/lib/structuredData";
 
 const Wrapper = styled.div`
   display: flex;
@@ -50,9 +51,10 @@ export default function NavBar({
       <Links>
         <LinkWrapper href="/">{logo}</LinkWrapper>
         <ContactDetails
-          type="Mobile Mechanic"
-          tel="+447845465922"
-          email="catalinrol@gmail.com"
+          type={business.type}
+          countryCode={business.countryCode}
+          mobile={business.mobile}
+          email={business.email}
         />
         {navbarItems.map((item) => (
           <LinkWrapper href={`/${item.href}`} key={item.href}>
