@@ -10,6 +10,7 @@ const Wrapper = styled.div<{
   background: ${({ $backgroundColor }) => $backgroundColor};
   color: ${({ $textColor }) => $textColor};
   height: ${({ $height }) => $height};
+  margin-top: 10em;
 `;
 
 interface IFooter {
