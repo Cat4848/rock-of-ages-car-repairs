@@ -6,14 +6,18 @@ const Wrapper = styled.div``;
 
 interface IFooter {
   backgroundColor: string;
+  text: string;
+  logo: string;
 }
 
-export default function Footer({ backgroundColor = "black" }: IFooter) {
+export default function Footer({
+  backgroundColor = "black",
+  text = "",
+  logo = ""
+}: IFooter) {
   return (
     <Wrapper>
-      <small>
-        {`Copyright © ${new Date().getFullYear()} Rock of Ages Software. All Rights Reserved.`}
-      </small>
+      <small>{text}</small>
     </Wrapper>
   );
 }
