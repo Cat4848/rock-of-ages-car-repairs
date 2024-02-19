@@ -2,15 +2,19 @@
 
 import styled from "styled-components";
 
-const Wrapper = styled.div<{ $color: string }>`
+const Wrapper = styled.div<{ $color: string; $height: string }>`
   background: ${({ $color }) => $color};
-  height: 0.5em;
+  height: ${({ $height }) => $height};
 `;
 
 interface IBottomTrim {
   color: string;
+  height: string;
 }
 
-export default function Trim({ color = "white" }: IBottomTrim) {
-  return <Wrapper $color={color}></Wrapper>;
+export default function Trim({
+  color = "white",
+  height = "0.5em"
+}: IBottomTrim) {
+  return <Wrapper $color={color} $height={height}></Wrapper>;
 }

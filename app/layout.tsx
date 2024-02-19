@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Trim from "@/components/Trim";
 import color from "@/lib/color";
 import { footerText, footerHeight, footerLogo } from "@/lib/footer";
+import { navbarBottomTrimHeight } from "@/lib/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav>
           <NavBar>
-            <Trim color={color.gold} />
+            <Trim color={color.gold} height={navbarBottomTrimHeight} />
           </NavBar>
         </nav>
         <main>{children}</main>
