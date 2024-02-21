@@ -1,19 +1,16 @@
 import Head from "next/head";
-import { Organization, Thing, WithContext } from "schema-dts";
 
-interface IStructuredData<T extends Thing> {
-  data: WithContext<T>;
+interface IStructuredData {
+  data: string;
 }
 
-export default function StructuredData<T extends Thing>({
-  data
-}: IStructuredData<T>) {
+export default function StructuredData({ data }: IStructuredData) {
   return (
     <Head>
       <script
         key="structured-data"
         type="application-json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+        dangerouslySetInnerHTML={{ __html: data }}
       />
     </Head>
   );
