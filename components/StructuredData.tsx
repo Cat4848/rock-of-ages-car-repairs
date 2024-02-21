@@ -1,6 +1,13 @@
 import Head from "next/head";
+import { Organization, Thing, WithContext } from "schema-dts";
 
-export default function StructuredData({ data }) {
+interface IStructuredData<T extends Thing> {
+  data: WithContext<T>;
+}
+
+export default function StructuredData<T extends Thing>({
+  data
+}: IStructuredData<T>) {
   return (
     <Head>
       <script
