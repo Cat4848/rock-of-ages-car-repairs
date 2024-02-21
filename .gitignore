@@ -16,9 +16,6 @@
 # production
 /build
 
-# structured data
-/lib/structuredData.ts
-
 # misc
 .DS_Store
 *.pem
