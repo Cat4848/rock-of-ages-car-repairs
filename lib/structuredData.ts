@@ -60,5 +60,6 @@ export const organization = jsonLd<Organization>({
   paymentAccepted: "Cash, Credit Card, Debit Card",
   hasPOS: "Yes",
   keywords:
-    "mobile mechanic in kent, mobile mechanic in medway, mobile mechanic in essex"
+    "mobile mechanic in kent, mobile mechanic in medway, mobile mechanic in essex",
+  slogan: "Honest Mechanic, Quality Service, Affordable Prices",
 });
