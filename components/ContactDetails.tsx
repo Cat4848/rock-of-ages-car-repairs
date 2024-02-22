@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import color from "@/lib/color";
 
 interface IContactDetails {
   type: string;
@@ -7,7 +8,9 @@ interface IContactDetails {
   email: string;
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  color: ${color.silver};
+`;
 const Telephone = styled.div``;
 const Email = styled.div``;
 
