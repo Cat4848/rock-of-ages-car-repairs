@@ -1,11 +1,5 @@
 import { Organization, Thing, WithContext, ImageObject } from "schema-dts";
-
-export const business = {
-  type: "Mobile Mechanic",
-  countryCode: "+44",
-  mobile: "7845465922",
-  email: "catalinrol@gmail.com"
-};
+import { business } from "./business";
 
 const image1: WithContext<ImageObject> = {
   "@context": "https://schema.org",
