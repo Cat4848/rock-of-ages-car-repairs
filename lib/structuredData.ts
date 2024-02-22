@@ -7,10 +7,6 @@ export const business = {
   email: "catalinrol@gmail.com"
 };
 
-function jsonLd<T extends Thing>(data: WithContext<T>) {
-  return JSON.stringify(data);
-}
-
 const image1: WithContext<ImageObject> = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
@@ -19,6 +15,10 @@ const image1: WithContext<ImageObject> = {
   contentUrl: "yellow-toy-car-in-dramatic-desert-landscape.jpeg",
   description: "Mobile Mechanic Services Presentation"
 };
+
+function jsonLd<T extends Thing>(data: WithContext<T>) {
+  return JSON.stringify(data);
+}
 
 export const organization = jsonLd<Organization>({
   "@context": "https://schema.org",
