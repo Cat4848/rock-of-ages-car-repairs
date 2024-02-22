@@ -7,7 +7,7 @@ import CarServices from "@/components/services/CarServices";
 import Brakes from "@/components/Brakes";
 import Values from "@/components/Values";
 import TextContent from "@/components/TextContent";
-import { homePageBusinessIntro } from "@/lib/content";
+import { homePageBusinessIntro, areasCovered } from "@/lib/content";
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,6 +22,7 @@ export default function Home() {
     <Wrapper>
       <MainImage src={yellowCar} alt={mainImageAlt} text={mainImageText} />
       <TextContent text={homePageBusinessIntro} />
+      <TextContent text={areasCovered} />
       <CarServices />
       <Brakes />
       <Values />
