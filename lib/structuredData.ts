@@ -8,9 +8,7 @@ export const business = {
 };
 
 function jsonLd<T extends Thing>(data: WithContext<T>) {
-  return `
-    ${JSON.stringify(data)}
-  `;
+  return JSON.stringify(data);
 }
 
 const image1: WithContext<ImageObject> = {
@@ -61,5 +59,5 @@ export const organization = jsonLd<Organization>({
   hasPOS: "Yes",
   keywords:
     "mobile mechanic in kent, mobile mechanic in medway, mobile mechanic in essex",
-  slogan: "Honest Mechanic, Quality Service, Affordable Prices",
+  slogan: "Honest Mechanic, Quality Service, Affordable Prices"
 });
