@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import color from "@/lib/color";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 
 interface IContactDetails {
   type: string;
@@ -7,7 +10,9 @@ interface IContactDetails {
   email: string;
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  color: ${color.silver};
+`;
 const Telephone = styled.div``;
 const Email = styled.div``;
 
@@ -22,14 +27,14 @@ export default function ContactDetails({
       <h1 itemProp="name">{type}</h1>
 
       <Telephone>
-        Call {""}
+        <BsFillTelephoneFill /> {""}
         <span itemProp="telephone">
           <a href={`tel:${countryCode}${mobile}`}>{`0${mobile}`}</a>
         </span>
       </Telephone>
 
       <Email>
-        e-mail {""}
+        <HiMail /> {""}
         <span itemProp="email">
           <a href={`mailto:${email}`}>{email}</a>
         </span>
