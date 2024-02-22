@@ -7,6 +7,8 @@ import Trim from "@/components/Trim";
 import color from "@/lib/color";
 import { footerText, footerHeight, footerLogo } from "@/lib/footer";
 import { navbarBottomTrimHeight } from "@/lib/navbar";
+import StructuredData from "@/components/StructuredData";
+import { organization } from "@/lib/structuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <StructuredData data={organization} />
       <body className={inter.className}>
         <nav>
           <NavBar>
