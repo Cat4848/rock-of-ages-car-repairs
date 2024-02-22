@@ -9,7 +9,7 @@ export default function StructuredData({ data }: IStructuredData) {
     <Head>
       <script
         key="structured-data"
-        type="application-json"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: data }}
       />
     </Head>
