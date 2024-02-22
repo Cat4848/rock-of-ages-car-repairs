@@ -34,5 +34,10 @@ export const organization = jsonLd<Organization>({
     addressRegion: "England",
     addressLocality: "Kent",
     addressCountry: "GB"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 51.376522,
+    longitude: 0.487458
   }
 });
