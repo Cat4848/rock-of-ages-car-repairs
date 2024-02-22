@@ -39,5 +39,20 @@ export const organization = jsonLd<Organization>({
     "@type": "GeoCoordinates",
     latitude: 51.376522,
     longitude: 0.487458
+  },
+  url: "https://",
+  telephone: business.countryCode + business.mobile,
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    opens: "07:00",
+    closes: "21:00"
   }
 });
