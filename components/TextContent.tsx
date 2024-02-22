@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import color from "@/lib/color";
-import { Header2 } from "@/lib/text";
 
 const Wrapper = styled.div``;
 const Paragraph = styled.p`
