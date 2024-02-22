@@ -22,7 +22,7 @@ export default function Home() {
     <Wrapper>
       <MainImage src={yellowCar} alt={mainImageAlt} text={mainImageText} />
       <TextContent text={homePageBusinessIntro} />
-      <TextContent text={areasCovered} />
+      <TextContent title="Areas Covered" text={areasCovered} />
       <CarServices />
       <Brakes />
       <Values />

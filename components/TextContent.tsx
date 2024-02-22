@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import color from "@/lib/color";
+import { Header2 } from "@/lib/text";
 
 const Wrapper = styled.div``;
 const Paragraph = styled.p`
@@ -14,12 +15,14 @@ const Paragraph = styled.p`
 `;
 
 interface ITextContent {
+  title?: string;
   text: string;
 }
-export default function TextContent({ text }: ITextContent) {
+export default function TextContent({ title, text }: ITextContent) {
   const content = text.split("\n");
   return (
     <Wrapper>
+      <h1>{title}</h1>
       {content.map((paragraph, i) => {
         if (!paragraph) return;
         return <Paragraph key={i}>{paragraph}</Paragraph>;
