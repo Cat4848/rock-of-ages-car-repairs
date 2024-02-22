@@ -42,6 +42,7 @@ export const organization = jsonLd<Organization>({
   },
   url: "https://",
   telephone: business.countryCode + business.mobile,
+  email: business.email,
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: [
@@ -54,5 +55,10 @@ export const organization = jsonLd<Organization>({
     ],
     opens: "07:00",
     closes: "21:00"
-  }
+  },
+  currenciesAccepted: "GBP",
+  paymentAccepted: "Cash, Credit Card, Debit Card",
+  hasPOS: "Yes",
+  keywords:
+    "mobile mechanic in kent, mobile mechanic in medway, mobile mechanic in essex"
 });
