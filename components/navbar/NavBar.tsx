@@ -4,7 +4,7 @@ import styled from "styled-components";
 import LinkWrapper from "../LinkWrapper";
 import color from "@/lib/color";
 import ContactDetails from "../ContactDetails";
-import { business } from "@/lib/structuredData";
+import { business } from "@/lib/business";
 
 const Wrapper = styled.div`
   display: flex;

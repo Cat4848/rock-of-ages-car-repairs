@@ -6,7 +6,7 @@ const Paragraph = styled.p``;
 interface ITextContent {
   text: string;
 }
-export default function TextContext({ text }: ITextContent) {
+export default function TextContent({ text }: ITextContent) {
   const content = text.split("\n");
   return (
     <Wrapper>
