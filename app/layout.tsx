@@ -44,8 +44,8 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <StructuredData data={organization} />
       </head>
-      <StructuredData data={organization} />
       <body className={inter.className}>
         <nav>
           <NavBar>
